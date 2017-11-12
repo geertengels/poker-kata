@@ -74,7 +74,7 @@ class InputLineReaderTest extends FunSuite {
     assert(h2Cards contains Card(THREE, HEARTS))
     assert(h2Cards contains Card(FOUR,  SPADES))
     assert(h2Cards contains Card(EIGHT, CLUBS))
-    assert(h2Cards contains Card(ACE,   HEARTS))
+    assert(h2Cards contains Card(ACE,   HEARTS)) 
   }
 }
 

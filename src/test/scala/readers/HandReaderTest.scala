@@ -21,7 +21,6 @@ class HandReaderTest extends FunSuite {
     for( (rep, rejectionReason) <- invalidReps) {
       try {
         val hand = HandReader(rep)
-        println(hand)
         assert(false, rejectionReason) // if we get here, an exception failed to be thrown
       } catch {
         case expected: IllegalArgumentException => // do nothing
@@ -40,7 +39,6 @@ class HandReaderTest extends FunSuite {
     for( (rep, numExpectedCardsInHand) <- validReps) {
       try {
         val hand = HandReader(rep)
-        println(hand)
         assert(hand != null)
         assert(hand.colour != null && hand.colour.value.size != 0)
         assert(hand.cards.size == numExpectedCardsInHand)
