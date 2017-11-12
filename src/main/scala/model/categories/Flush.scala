@@ -10,9 +10,9 @@ object Flush extends Category {
 
   def reason = "Flush"
   
-  	def rank(hand1: Hand, hand2: Hand): PossResult = {
-  	  neitherOrOnlyOne(hand1.isFlush, hand2.isFlush, hand1, hand2) {
-     	HighCard.rank(reason, hand1, hand2)
-  	  }
-  	}
+  def rank(hand1: Hand, hand2: Hand): PossResult = {
+    neitherOrOnlyOne(hand1.isFlush, hand2.isFlush, hand1, hand2) {
+      HighCard.rank(reason, hand1, hand2)
+    }
+  }
 }

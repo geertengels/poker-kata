@@ -10,8 +10,7 @@ import org.scalatest.junit.JUnitRunner
 import readers.InputLineReader
 
 @RunWith(classOf[JUnitRunner])
-class StraighFlushTest extends FunSuite {
-  
+class StraightFlushTest extends FunSuite {
   
   // @TODO: for Straight Flush we can do an interesting property-based test: 
   // no set of two hands on straight flush is applicable should ever rank as a Draw

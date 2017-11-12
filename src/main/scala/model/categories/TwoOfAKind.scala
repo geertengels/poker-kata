@@ -13,13 +13,13 @@ object TwoOfAKind extends Category {
   
   def reason = "Two of a Kind"
   	 
-  	def rank(hand1: Hand, hand2: Hand): PossResult = {
-  	  val (pair1, remainingHand1) = hand1.pair
-  	  val (pair2, remainingHand2) = hand2.pair
-  	  neitherOrOnlyOne(pair1.isDefined, pair2.isDefined, hand1, hand2) {
-  	    compareFaces(pair1.get.face, pair2.get.face, hand1, hand2) {
-  	      (HighCard.rank(reason, remainingHand1, remainingHand2))
-  	    }
-  	  }
-  	}
+  def rank(hand1: Hand, hand2: Hand): PossResult = {
+    val (pair1, remainingHand1) = hand1.pair
+    val (pair2, remainingHand2) = hand2.pair
+    neitherOrOnlyOne(pair1.isDefined, pair2.isDefined, hand1, hand2) {
+      compareFaces(pair1.get.face, pair2.get.face, hand1, hand2) {
+        (HighCard.rank(reason, remainingHand1, remainingHand2))
+      }
+    }
+  }
 }
