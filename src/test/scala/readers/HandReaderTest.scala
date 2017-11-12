@@ -48,6 +48,5 @@ class HandReaderTest extends FunSuite {
         case ex: IllegalArgumentException => fail(ex.toString)
       }
     }
-
   }
 }

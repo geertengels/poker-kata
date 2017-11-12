@@ -29,5 +29,4 @@ object TestData {
   val HAND_2C_4C_6C_8C_TC = HandReader("Hand: 2C 4C 6C 8C TC")
   val HAND_2C_2D_2S_KS_QS = HandReader("Hand: 2C 2D 2S KS QS")
   val HAND_2C_2D_KC_KD_KS = HandReader("Hand: 2C 2D KC KD KS")
-
 }
