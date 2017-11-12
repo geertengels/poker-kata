@@ -5,7 +5,6 @@ import Hand._
 import Face._
 
 /* FROM KATA: Straight flush: 5 cards of the same suit with
-
  * consecutive values. Ranked by the highest card in the hand.
  */
 object StraightFlush extends Category {

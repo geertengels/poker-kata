@@ -5,7 +5,8 @@ import Hand._
 import Face._
 
 /* FROM KATA: Flush: Hand contains 5 cards of the same suit. 
- * Hands which are both flushes are ranked using the rules for High Card. */
+ * Hands which are both flushes are ranked using the rules for High Card.
+ */
 object Flush extends Category {
 
   def reason = "Flush"
