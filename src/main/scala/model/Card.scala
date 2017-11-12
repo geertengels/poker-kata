@@ -7,6 +7,5 @@ case class Card(face: Face.Value, suit: Suit.Value) extends Ordered[Card] {
   
   override def toString(): String = { face.toString + suit.toString }
   
-  def compare(that: Card) =
-    this.face.compareTo(that.face)
+  def compare(that: Card) = this.face.compareTo(that.face)
 }
